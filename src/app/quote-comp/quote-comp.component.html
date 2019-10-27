@@ -1,4 +1,6 @@
-<li *ngFor='let quote of quotes '>
-  {{quote.name}} {{quote.quoteName}}
-</li>
+<div *ngFor='let quote of quotes; let i = index '>
+  <li> {{quote.name}} {{quote.quoteName}} due on {{quote.completeDate|date}}</li>
+  <button (click)='toggleDetails(i)'>Read More</button>
+  <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
+</div>
 

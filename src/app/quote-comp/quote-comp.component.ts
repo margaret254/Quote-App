@@ -9,9 +9,13 @@ import { Quotes } from '../quotes';
 export class QuoteCompComponent implements OnInit {
 
   quotes:Quotes[] = [
-    {name:'Margaret', quoteName:'Hide Yourself in God,so when a man wants to find you he will have to go there first.',author:'Rose.W.'},
-    {name:'Serah', quoteName:'May we all become teachers of peace,and teach in the only way possible: by example.',author:'Charles.G'}
+    new Quotes('Margaret','Hide Yourself in God,so when a man wants to find you he will have to go there first.','Rose.W.',new Date(2019,10,24)),
+    new Quotes('Serah', 'May we all become teachers of peace,and teach in the only way possible: by example.','Charles.G',new Date(2019,10,24))
   ];
+
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
 
   constructor() { }
 
