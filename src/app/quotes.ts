@@ -1,5 +1,5 @@
 export class Quotes {
   name:string;
-  quote:string;
-  
+  quoteName:string;
+  author:string;
 }
