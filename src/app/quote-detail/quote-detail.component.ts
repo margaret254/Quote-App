@@ -15,6 +15,15 @@ export class QuoteDetailComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
+  @Output() isUp = new EventEmitter<boolean>();
+  addUp(add:boolean){
+    this.isUp.emit(add);
+  }
+
+  @Output() isDown = new EventEmitter<boolean>();
+  addDown(add:boolean){
+    this.isDown.emit(add);
+  }
   constructor() { }
 
   ngOnInit() {

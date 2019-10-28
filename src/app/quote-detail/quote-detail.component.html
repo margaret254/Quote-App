@@ -1,6 +1,14 @@
 <p>
-  {{quote.author}}
+  Author: {{quote.author}}
 </p>
-<p> The quote was created {{quote.completeDate|timeCount}}</p>
-<button (click) ='quoteDelete(true)'>Delete Quote</button>
+
+<p><i class="fa fa-thumbs-up fa-2x mr-2 text-primary" (click)='addUp(true)'></i> <span class="mr-3">{{quote.upvote}}</span> <i class="fa fa-thumbs-down fa-2x mr-2 text-danger" (click)='addDown(true)'></i><span>{{quote.downvote}}</span> </p>
+
+<p class="text-success">Posted on {{quote.myDate|date}} by {{quote.name}}</p>
+
+<p> {{quote.completeDate|timeCount}}</p>
+<div class="form-group">
+<button type="submit" class="btn btn-outline-danger" (click) ='quoteDelete(true)'>Delete Quote</button>
+</div>
+
 
