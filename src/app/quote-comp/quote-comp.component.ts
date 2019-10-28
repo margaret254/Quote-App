@@ -13,6 +13,16 @@ export class QuoteCompComponent implements OnInit {
     new Quotes('Serah', 'May we all become teachers of peace,and teach in the only way possible: by example.','Charles.G',new Date(2019,10,24))
   ];
 
+  deleteGoal(isComplete,index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete the Quote?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
+
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
