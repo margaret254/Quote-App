@@ -12,6 +12,7 @@
     <h1 class="text">Welcome to My Quote-App.</h1>
     <p> This is an App that allows you view quotes from various authors around the world. You can also add your own quote too. And also you can add your quote too, you can vote if you feel the quote is helpful or you can down vote if you feel it wasn't helpful to you.</p>
 
+
     <div class="row">
       <div class="col-md-6">
         <div class="all-cards">
@@ -23,11 +24,13 @@
 
           <button (click)='toggleDetails(i)' class="btn btn-info btn-sm" id="quotes-button">Read More</button>
 
-          <div>
 
-              <p appHighlightQuote *ngIf="loopVote()===quote.upvote && quote.upvote>0"><i class="fa fa-quote-left fa-2x text-dark mr-3"></i> {{quote.quote}} </p>
 
-            <p *ngIf="loopVote()!==quote.upvote || quote.upvote===0"><i class="fa fa-quote-left fa-2x text-dark mr-3"></i>
+              <p appHighlightQuote *ngIf="loopVote()===quote.upvote && quote.upvote>0"> {{quote.quote}} </p>
+              <div>
+
+            <p *ngIf="loopVote()!==quote.upvote || quote.upvote===0">
+              <p *ngIf="loopVote()!==quote.upvote || quote.downvote===0">
             </p>
 
 
