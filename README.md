@@ -1,15 +1,15 @@
 # QuoteApp
 
-###### This is an application where users can create quotes and have those quotes voted on whether they are helpful or terrible.
+This is an application where users can create quotes and have those quotes voted on whether they are helpful or terrible.
 
 ### Description
 
-###### QuoteApp is an application where by users are able to create their own quotes and then the viewers of the page can vote whether the quote was helpful to them or not.
+ QuoteApp is an application where by users are able to create their own quotes and then the viewers of the page can vote whether the quote was helpful to them or not.
 
 
 ### Project Live Site
 
-###### This is the live link of the site. [ ]
+#### This is the live link of the site. [ ]
 
 ### Setup Instructions
 
