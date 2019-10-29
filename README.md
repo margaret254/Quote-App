@@ -1,7 +1,6 @@
 # QuoteApp
 
 ###### This is an application where users can create quotes and have those quotes voted on whether they are helpful or terrible.
-########## This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ### Description
 
