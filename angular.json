@@ -90,6 +90,14 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist",
+            "netlifyToken": "9ce00e245a2e89dfdca34c5b73e0a48e004814fe5ebb1ac7076f2694672afa42",
+            "siteId": "c4ba4ddd-0fcc-48d5-835c-0f8b555fea9f"
+          }
         }
       }
     },
