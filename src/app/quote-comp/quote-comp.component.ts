@@ -36,15 +36,15 @@ export class QuoteCompComponent implements OnInit {
     }
   }
 
-  addTotal(mine,index){
-    if(mine){
-      this.quotes[index].upvote +=1;
+  addTotal(isUp,index){
+    if(isUp){
+      this.quotes[index].upvote ++;
     }
   }
 
   adTotal(isDown,index){
     if(isDown){
-      this.quotes[index].upvote +=1;
+      this.quotes[index].downvote ++;
     }
   }
 
@@ -56,7 +56,7 @@ export class QuoteCompComponent implements OnInit {
       this.lastNum = this.quotes[this.count].upvote;
       if(this.lastNum > this.firstNum){this.firstNum = this.lastNum}
     }
-    return this.firstNum
+    return this.lastNum
   }
 
   toggleDetails(index){
