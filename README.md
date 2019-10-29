@@ -9,7 +9,7 @@ This is an application where users can create quotes and have those quotes voted
 
 ### Project Live Site
 
-#### This is the live link of the site. [ https://distracted-kepler-9d834f.netlify.com/]
+#### This is the live link of the site. [https://distracted-kepler-9d834f.netlify.com/]
 
 ### Setup Instructions
 
