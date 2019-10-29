@@ -8,14 +8,13 @@ export class HighlightQuoteDirective {
 
   constructor(private elem:ElementRef){}
 
-  @HostListener("click") addTotal(){
-    this.highlight("highlight");
+  @HostListener("click") onClicks(){
+    this.textDeco("highlight")
   }
-  private highlight(action:string){
-    this.elem.nativeElement.style.backgroundColor = 'blue';
-  }
+  private textDeco(action:string){
+    this.elem.nativeElement.style.backgroundColor='aqua';
 
   }
 
 
-
+}

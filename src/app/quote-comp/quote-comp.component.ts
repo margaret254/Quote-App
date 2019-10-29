@@ -9,9 +9,10 @@ import { Quotes } from '../quotes';
 export class QuoteCompComponent implements OnInit {
 
   quotes:Quotes[] = [
-    new Quotes('Margaret: ','  Hide Yourself in God,so when a man wants to find you he will have to go there first.','Rose.W.',0,0,new Date(2019,10,24)),
-    new Quotes('Serah: ', '  May we all become teachers of peace,and teach in the only way possible: by example.','Charles.G',0,0,new Date(2019,10,24)),
-    new Quotes('Kush: ', '  Manners are there to be learnt by example not by rules.','Ann Wanjiku',0,0,new Date(2019,10.3))
+    new Quotes('Margaret says: ','  Hide Yourself in God,so when a man wants to find you he will have to go there first.','Rose.W.',0,0,new Date(2019,10,24)),
+    new Quotes('Serah says: ', '  May we all become teachers of peace,and teach in the only way possible: by example.','Charles.G',0,0,new Date(2019,10,24)),
+    new Quotes('Kush says: ', '  Manners are there to be learnt by example not by rules.','Ann Wanjiku',0,0,new Date(2019,10.3)),
+    new Quotes('Nelly says: ', 'Straight talk is a good example to set, and if there are real reasons behind your decisions, its actually helpful to share them with your child.', ' Abdul .M .Arthur',0,0,new Date(2019,10,29))
   ];
 
   firstNum :number
@@ -66,6 +67,7 @@ export class QuoteCompComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
