@@ -1,8 +1,24 @@
 # QuoteApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+###### This is an application where users can create quotes and have those quotes voted on whether they are helpful or terrible.
+########## This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
-## Development server
+### Description
+
+###### QuoteApp is an application where by users are able to create their own quotes and then the viewers of the page can vote whether the quote was helpful to them or not.
+
+
+### Project Live Site
+
+###### This is the live link of the site. [ ]
+
+### Setup Instructions
+
+* Clone the program from [Online]()
+* Click on the green button to clone or download
+
+
+### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
